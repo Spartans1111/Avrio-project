@@ -1465,22 +1465,22 @@ body.modal-open {
     cursor: pointer;
     position: relative;
   }
-  .toggle1 {
-    transform: rotate(45deg) translate(5px, 5px);   /* Rotation and position for "X" */
-  }
-  
-  .toggle2 {
-    opacity: 0;                  /* Hide the middle line when forming "X" */
-  }
-  
-  .toggle3 {
-    transform: rotate(-45deg) translate(5px, -5px); /* Rotation and position for "X" */
-  }
-  
-  /* Additional styling when the menu is active */
-  .display {
-    transform: translateX(0%) !important;
-  }
+ .toggle1 {
+  transform: rotate(45deg) translate(5px, 5px);   /* Rotation and position for "X" */
+}
+
+.toggle2 {
+  opacity: 0;                  /* Hide the middle line when forming "X" */
+}
+
+.toggle3 {
+  transform: rotate(-45deg) translate(5px, -5px); /* Rotation and position for "X" */
+}
+
+/* Additional styling when the menu is active */
+.display {
+  transform: translateX(0%) !important;
+}
   /* home - hero */
 
   .banner {
@@ -2232,7 +2232,7 @@ body.modal-open {
 
 /* mobile screen - 360px */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   /* home */
 
   /* nav */
