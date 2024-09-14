@@ -375,6 +375,20 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+      // When the width is >= 1024px (desktop)
+      1024: {
+        slidesPerView: 3,
+      },
+      // When the width is >= 768px (tablet)
+      768: {
+        slidesPerView: 2, // Show 2 cards per row on tablets
+      },
+      // When the width is < 768px (mobile)
+      0: {
+        slidesPerView: 1, // Show 1 card per row on mobile
+      },
+    },
       });
 
 

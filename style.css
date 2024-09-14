@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+  body{
+    overflow-x: hidden;
+  }
   /* 
   .custom-nav {
     height: 99px;
@@ -807,7 +811,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 671px;
+    /* height: 671px; */
+    height: 90vh;
     margin-top: 100px;
   }
   
@@ -1019,6 +1024,92 @@
     font-weight: bold;
     line-height: 2.8125rem;
   }
+
+
+
+  /* key benefits for tablet*/
+
+  .keybenefit-section{
+    display: none;
+    background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
+    padding: 50px 70px;
+  }
+
+    
+  .key-left-heading {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-bottom: 50px;
+    /* margin: 0 70px; */
+  }
+
+  .key-accordion {
+      max-width: 100%;
+      /* margin: 0 70px; */
+    }
+    
+    .key-accordion-item {
+     border: 2px solid white;
+    }
+    
+    .key-accordion-title {
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.25;
+    }
+    
+    .key-accordion-title i {
+      transition: transform 0.3s ease;
+      color : white;
+    }
+    
+    .key-accordion-content {
+      display: none;
+      font-size : 1.2rem;
+      padding: 20px;
+    }
+    
+    .key-accordion-item.active .key-accordion-content {
+      display: block;
+    }
+    
+    .active .fas.fa-chevron-down {
+      transform: rotate(180deg);
+    }
+
+    .key-right-text{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+  
+    .key-right-text img {
+      width: 6rem;
+      height: 6rem;
+    }
+    
+    
+    .key-right-text p {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.125rem; /* Equivalent to 18px */
+      font-weight: bold;
+      line-height: 1.5625rem; /* Equivalent to 25px */
+    }
+
+
+
+
   
   /* key feature */
   .container-ship {
@@ -1358,7 +1449,7 @@
     position: fixed; 
     top: 0; 
     width: 100%; 
-    z-index: 1000;
+    z-index: 9999;
   
   }
   .nav ul li{
@@ -1395,7 +1486,7 @@
   }
   
   .humbargar{
-    height: 3vh;
+    height: 24px;
     width: 30px;
     display: none;
    
@@ -1403,18 +1494,31 @@
   .line1,.line2,.line3{
     height: 30%;
     width: 100%;
-    background-color: black;
+    background-color: #005087;
     margin-top: 3px;
     border-radius: 5px;
   }
+
+
+
+
+
+
+  /* resposnive - tablet*/
   
   @media screen and (max-width:768px) {
+
+    .nav{
+       
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     .nav ul{
-      padding: 25px 30px;
+      /* padding: 10px 30px; */
       position: fixed;
       top:99px;
       left: 0;
-      height: 50vh;
+      height: 90vh;
       width: 100%;
       transform: translateX(-100vw);
       text-align: center;
@@ -1443,10 +1547,11 @@
       cursor: pointer;
     }
     .display{
+      transform: translateX(0vw) !important;
       transform: translateX(0%);
     }
     .toggle1{
-      transform: rotate(45deg) translate(7px,7px);
+        transform: rotate(45deg) translate(7px,7px);
       transition: transform 0.6s;
      
     }
@@ -1454,8 +1559,802 @@
      display: none;
     }
     .toggle3{
-      transform: rotate(-45deg);
+        transform: rotate(-45deg);
       transition: transform 0.6s;
     }
+
+
+
+
+    /* home - hero */
+
+    .banner{
+        height: 100vh;
+    }
+
+    .hero-text {
+        top: 15%;
+        left: 0;
+        margin:auto 70px;
+      }
+
+      /* about */
+    .aboutcontent {
+        padding: 40px 65px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+
+    /* offered course */
+    .offered-course {
+        margin: 50px 70px 50px 70px;
+      }
+      
+      .offered-course-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        gap: 50px;
+      }
+      
+      .img-div {
+        height: 499px;
+        width: 100%;
+        /* padding: 50px; */
+      }
+      
+      .img-div img {
+        width: 100%;
+        height: 499px;
+        border-radius: 10px;
+      }
+      
+      .text-div {
+        width: 100%;
+        padding: 0px;
+        gap: 30px;
+      }
+      
+      .text-div p {
+        width: 100%;
+      }
+
+      /* testimonial */
+
+      .testimonial .heading {
+        margin-left: 50px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        opacity: 1;
+        color: white;
+        transition: all 0.3s ease;
+        margin-left: -35px;
+        margin-right: -35px;
+      }
+
+      .client-text {
+        margin: 0 70px;
+      }
+      
+      
+      .client-text p {
+        width: 100%;
+      }
+      
+
+      /* blog */
+      .blog-main {
+        margin: 50px 70px;
+      }
+
+      /* footer */
+      
+  footer {
+    padding: 60px 70px;
+  
   }
   
+  footer .row {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  footer .row .col1 {
+    width: 30%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .col2,
+  .col3 {
+    /* width: 20%; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  footer img {
+    border-radius: 50%;
+    background-color: white;
+    width: 140.44px;
+    height: 137px;
+  }
+
+  footer .row .col1 p {
+    color: white;
+    margin-left: 0;
+  }
+
+
+
+  /* course - hero */
+
+  
+  .course-banner {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .course-hero-text {
+    top: 15%;
+    left: 0;
+    margin-left: 70px;
+  }
+  
+  .course-hero-text h1 {
+    width: 100%;
+  }
+  
+  .course-hero-text h3 {
+    width: 100%;
+  }
+  
+  .courses {
+    margin: 50px 70px;
+  }
+
+  .course-card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .course-card .img-div {
+    height: 413px;
+    width: 100%;
+  }
+  
+  .course-card .text-div {
+    width: 100%;
+  }
+  
+
+  /* key benefit */
+
+  .content-container{
+    display: none;
+  }
+
+  .keybenefit-section{
+    display: block;
+  }
+
+  /* key feature */
+  .container-ship {
+    background-image: url("./assets/Key\ Features.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 23.9375rem;
+  }
+  
+  .container-ship h1 {
+    padding-top: 50px;
+    margin-left: 70px;
+  }
+  
+  .key-feature {
+    background-color: white;
+    position: relative;
+    padding-top: -100px;
+    z-index: 1;
+    /* padding-bottom: 160px; */
+
+  }
+  
+  .key-feature-text {
+    padding-bottom: 60px;
+    margin: -100px 70px;
+  }
+  
+  .key-feature-text h3 {
+    padding-bottom: 25px;
+  }
+  
+  .key-feature-text p {
+    word-wrap: break-word;       
+    overflow-wrap: break-word;    
+    white-space: normal;         
+    width: 100%;                
+    height: auto;   
+  }
+  
+
+  /* accordion */
+  
+  .accordion {
+    height: auto;
+    margin-bottom: -80px;
+    padding: 50px 70px;
+  }
+  
+  .accordion-main {
+    height: auto;
+    padding: 35px;
+  }
+  
+  .accordion-container {
+    width: 100%;
+    gap: 15px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  
+  .accordion-title {
+    margin: 0 5px;
+    padding: 5px 0;
+    font-size: 26px;
+  }
+  
+  .accordion-title:hover,
+  .accordion-item.active .accordion-title {
+    font-size: 36px;
+  }
+  
+  .accordion-content {
+
+    padding: 10px 10px 0 10px;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+
+
+  /* model */
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: 5% auto;
+    /* padding: 40px 50px; */
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 20px;
+    max-width: 830px;
+  }
+  
+  .project-detail {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    padding: 30px 50px;
+    /* margin: 60px; */
+    margin: 70px 70px;
+  }
+  
+  .project-detail h4 {
+    height: 3rem;
+    text-align: center;
+    color: #666666;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  
+  .project-detail form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-detail form input,
+  .project-detail form textarea,
+  .select-div {
+    border: 1px solid #cccccc;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .project-detail form textarea {
+    height: 6.45rem;
+  }
+  
+  .project-detail form input::placeholder,
+  .project-detail form textarea::placeholder {
+    color: #666;
+  }
+  
+  .project-detail select {
+    width: 100%;
+    color: #666;
+    border: none;
+  }
+  
+  .project-detail button {
+    width: 150px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
+  }
+
+
+
+  /* home 2 */
+  
+  .home-2-banner {
+    height: 90vh;
+    margin-top: 100px;
+  }
+  
+  .home-hero-text {
+    top: 25%;
+    left: 0;
+    margin-left: 70px;
+  }
+  
+  .home-hero-text h1 {
+    width: 80%;
+  }
+  
+  .home-hero-text p {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    width: 60%;
+  }
+  
+  .content-bg {
+    background-image: url("./assets/What\ to\ expect\ 2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .simulation-course {
+    margin: 50px 70px;
+  }
+  
+  
+  .simulation-course-div {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+  
+  .course-div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: auto;
+    padding: 50px 50px;
+    gap: 50px;
+  }
+  
+  .course-img-div {
+    width: 100%;
+  }
+  
+  .course-img-div img{
+    border-radius: 10px;
+  }
+
+  .course-text-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .course-text-div p {
+    width: 100%;
+  }
+
+  
+  .contact-support {
+    padding: 50px 70px;
+  }
+  
+  
+  }
+  
+
+
+  /* mobile */
+  @media screen and (max-width: 480px) {
+    /* home */
+
+/* nav */
+.nav{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* hero */
+    
+  .hero-text {
+    top: 10%;
+    margin-left: 50px;
+  }
+  
+  .hero-text h1 {
+    color: white;
+    font-size: 46px;
+    line-height: 50px;
+  }
+  
+  .hero-text h3 {
+    width: 100%;
+  }
+
+  
+  /* about */
+  
+  .aboutcontent {
+    padding: 36px 50px;
+    margin-top: -140px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .aboutcontent h3 {
+    color: #3a321d;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  
+  /* offered courses */
+  .offered-course {
+    margin: 50px;
+  }
+
+  .offered-course-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    gap: 30px;
+  }
+  
+  .img-div {
+    height: 399px;
+    width: 100%;
+    /* padding: 50px; */
+  }
+  
+  .img-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .text-div {
+    width: 100%;
+    padding: 0px;
+    gap: 30px;
+  }
+  
+  .text-div p {
+    width: 100%;
+  }
+
+/* testimonial */
+  .swiper {
+    width: 65vw;
+  }
+
+  .client-text {
+    margin: 0 50px;
+  }
+  
+  
+  .client-text p {
+    width: 100%;
+  }
+  
+
+  /* blog */
+  .blog-main {
+    margin: 50px 50px;
+  }
+
+  .post {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    border-radius: 10px;
+    height: 380px;
+  }
+
+  /* footer */
+footer {
+padding: 60px 50px;
+
+}
+
+footer img {
+width: 100px;
+height: 100px;
+}
+
+  /* course - hero */
+
+  
+  .course-banner {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .course-hero-text {
+    top: 10%;
+    left: 0;
+    margin: 0 50px;
+  }
+  
+  .course-hero-text h1 {
+    width: 100%;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+
+    
+  .course-hero-text h3 {
+    width: 100%;
+  }
+
+  
+  /*course card */
+  .courses {
+    margin: 50px 50px;
+  }
+
+  .course-card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .course-card .img-div {
+    height: 413px;
+    width: 100%;
+  }
+  
+  .course-card .text-div {
+    padding: 0;
+    width: 100%;
+  }
+  
+
+   /* key benefits for tablet*/
+
+   .keybenefit-section{
+    padding: 50px 50px;
+  }
+    
+    .key-accordion-title {
+      font-size: 20px;
+    }
+    
+
+  /* key feature */
+  
+  .container-ship h1 {
+    padding-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .key-feature-text {
+    padding-bottom: 60px;
+    padding: 35px;
+    margin: -200px 50px;
+  }
+  
+  .key-feature-text h3 {
+    padding-bottom: 25px;
+  }
+  
+  .key-feature {
+    padding-bottom: 220px;
+  }
+
+  
+  
+  /* accordion */
+  
+  .accordion {
+    height: auto;
+    margin-bottom: -80px;
+    padding: 50px 50px;
+  }
+  
+  .accordion-main {
+    height: auto;
+    padding: 30px;
+  }
+  
+  .accordion-title {
+    margin: 0 5px;
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  
+  .accordion-title:hover,
+  .accordion-item.active .accordion-title {
+    font-size: 26px;
+  }
+  
+  .accordion-content {
+    padding: 10px 10px 0 10px;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+
+  
+  /* model */
+  
+  .modal-content {
+    border: 1px solid #888;
+    width: 90%;
+  }
+  
+  .project-detail {
+    padding: 30px 30px;
+    margin: 85px 50px;
+  }
+
+
+  
+
+  /* home 2 */
+  
+  .home-2-banner {
+    height: 90vh;
+    margin-top: 100px;
+  }
+  
+  .home-hero-text {
+    top: 15%;
+    left: 0;
+    margin-left: 70px;
+  }
+  
+  .home-hero-text h1 {
+    width: 80%;
+  }
+  
+  .home-hero-text p {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    width: 60%;
+  }
+  
+  .content-bg {
+    background-image: url("./assets/What\ to\ expect\ 2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .simulation-course {
+    margin: 50px 0;
+  }
+  
+  .simulation-course .heading {
+    margin-left: 50px;
+    width: max-content;
+  }
+
+    
+  .simulation-course-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .course-div {
+    margin: 0 50px;
+    padding: 20px;
+    height: auto;
+    gap: 20px;
+  }
+  
+  .course-img-div {
+    width: 100%;
+  }
+  
+  .course-text-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    word-break: normal;
+    gap: 30px;
+    padding: 1% 0;
+  }
+  
+  .course-text-div h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: left;
+  }
+  
+  .course-text-div p {
+    color: #3a321d;
+    font-size: 16px;
+    word-wrap: break-word;        /* Allows long words to break and wrap */
+    overflow-wrap: break-word;    /* Ensures that text wraps within the container */
+    white-space: normal;          /* Allows text to wrap onto the next line */
+    width: 100%;                  /* Ensures it adjusts to the container */
+    height: auto;     
+  }
+
+  .contact-support {
+    padding: 50px 50px;
+  }
+  
+
+
+  }
