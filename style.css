@@ -7,75 +7,6 @@
   body{
     overflow-x: hidden;
   }
-  /* 
-  .custom-nav {
-    height: 99px;
-    background-color: white;
-    backdrop-filter: blur(30px);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    z-index: 1000;
-  }
-  
-  .logo {
-      width: 103.56px;
-      height: 101.56px;
-    }
-  
-  .nav-links-container {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    height: 29px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-  }
-  
-  .nav-item {
-    width: auto;
-    height: 29px;
-    text-align: center;
-    color: #005087;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: #005087;
-  }
-  
-  .login-button {
-    width: 140px;
-    height: 45px;
-    background: linear-gradient(to right, #001aaf, #871eb6);
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   
   /* hero section */
   
@@ -2013,7 +1944,7 @@
 
 
   /* mobile */
-  @media screen and (max-width: 480px) {
+ @media screen and (max-width: 480px) {
     /* home */
 
 /* nav */
