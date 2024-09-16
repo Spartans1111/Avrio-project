@@ -2352,13 +2352,12 @@ body.modal-open {
   }
 
   .project-detail {
-    padding: 30px 30px;
-    margin: 85px 50px;
+    gap: 0px;
   }
 
-  .project-detail h4{
-    padding: 10px;
-  }
+  /* .project-detail h4{
+    padding: 20px;
+  } */
 
   /* home 2 */
 
