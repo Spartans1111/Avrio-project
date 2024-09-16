@@ -2266,12 +2266,12 @@ body.modal-open {
   }
 
   .course-card .img-div {
-    height: 313px;
+    height: 100px;
     width: 100%;
   }
 
   .course-card .img-div img{
-    height: 313px;
+    height: 100px;
   }
 
   .course-card .text-div {

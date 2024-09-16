@@ -1131,6 +1131,7 @@ body.modal-open {
   display: none;
   background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
   padding: 50px 70px;
+  z-index: 3;
 }
 
 .key-left-heading {
@@ -1141,12 +1142,14 @@ body.modal-open {
   line-height: 1.25;
   margin-bottom: 50px;
   /* margin: 0 70px; */
+  z-index: 4;
 }
 
 .key-accordion {
   max-width: 100%;
   border: 2px solid white;
   /* margin: 0 70px; */
+  z-index: 4;
 }
 
 .key-accordion-item {
@@ -1203,6 +1206,8 @@ body.modal-open {
   font-weight: bold;
   line-height: 1.5625rem; /* Equivalent to 25px */
 }
+
+
 
 /* key feature */
 .container-ship {
@@ -2289,12 +2294,12 @@ body.modal-open {
   }
 
   .course-card .img-div {
-    height: 313px;
+    height: 270px;
     width: 100%;
   }
 
   .course-card .img-div img{
-    height: 313px;
+    height: 270px;
   }
 
   .course-card .text-div {
@@ -2676,8 +2681,12 @@ body.modal-open {
   }
 
   .course-card .img-div {
-    height: 313px;
+    height: 270px;
     width: 100%;
+  }
+
+  .course-card .img-div img{
+    height: 270px;
   }
 
   .course-card .text-div {
