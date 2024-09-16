@@ -16,7 +16,7 @@ body {
 }
 
 .banner {
-  background-image: url("./assets/ship.png");
+  background-image: url("./assets/banner-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -898,7 +898,7 @@ body.modal-open {
 /* hero section */
 
 .course-banner {
-  background-image: url("./assets/course-banner.png");
+  background-image: url("./assets/banner-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1353,7 +1353,7 @@ body.modal-open {
 /* home 2 */
 
 .home-2-banner {
-  background-image: url("./assets/home-2-banner.png");
+  background-image: url("./assets/banner-3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
