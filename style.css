@@ -2849,6 +2849,7 @@ body.modal-open {
   }
 
   .course-card .img-div {
+    padding: 0;
     height: 270px;
     width: 100%;
   }
