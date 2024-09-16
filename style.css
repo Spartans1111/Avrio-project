@@ -2138,7 +2138,7 @@ body.modal-open {
     padding: 30px;
     gap: 30px;
   }
-
+ 
   .img-div {
     height: 299px;
     width: 100%;
@@ -2159,6 +2159,7 @@ body.modal-open {
 
   .text-div p {
     width: 100%;
+    font-size: 16px;
   }
 
   /* testimonial */
@@ -2507,6 +2508,7 @@ body.modal-open {
     font-size: 28px;
   }
 
+
   .offered-course-container {
     display: flex;
     flex-direction: column;
@@ -2534,7 +2536,7 @@ body.modal-open {
 
   .text-div p {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 
