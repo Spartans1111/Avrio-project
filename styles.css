@@ -16,13 +16,24 @@ body {
 }
 
 .banner {
-  background-image: url("./assets/ship.png");
+  background-image: url("./assets/banner-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  /* height: 671px; */
-  height: 89vh;
+  height: 671px;
+  /* height: 90vh; */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 1;
 }
 
 .hero-svg {
@@ -665,7 +676,7 @@ footer .row .col1 {
 
 .col1 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: normal;
 }
 
@@ -708,6 +719,10 @@ footer ul li:last-child {
   margin-top: 30px;
 }
 
+.footer-mobile p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px !important;
+}
 
 .footer-mobile{
   display: none;
@@ -883,7 +898,7 @@ body.modal-open {
 /* hero section */
 
 .course-banner {
-  background-image: url("./assets/course-banner.png");
+  background-image: url("./assets/banner-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1001,11 +1016,14 @@ body.modal-open {
   grid-template-columns: 1.1fr 1fr;
   background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
   border: 3px solid white;
+  position: relative;
+  z-index: 3;
 }
 
 .left-side {
   overflow-y: auto;
   border-right: 3px solid white;
+  z-index: 4; 
 }
 
 .left-heading {
@@ -1030,6 +1048,7 @@ body.modal-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 4; 
 }
 
 .right-side-content {
@@ -1112,6 +1131,8 @@ body.modal-open {
   display: none;
   background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
   padding: 50px 70px;
+  position: relative;
+  z-index: 3;
 }
 
 .key-left-heading {
@@ -1122,16 +1143,21 @@ body.modal-open {
   line-height: 1.25;
   margin-bottom: 50px;
   /* margin: 0 70px; */
+  position: relative;
+  z-index: 4;
 }
 
 .key-accordion {
   max-width: 100%;
   border: 2px solid white;
   /* margin: 0 70px; */
+  z-index: 4;
 }
 
 .key-accordion-item {
   border: 2px solid white;
+  position: relative;
+  z-index: 4;
 }
 
 .key-accordion-title {
@@ -1145,6 +1171,8 @@ body.modal-open {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
+  position: relative;
+  z-index: 4;
 }
 
 .key-accordion-title i {
@@ -1156,6 +1184,8 @@ body.modal-open {
   display: none;
   font-size: 1.2rem;
   padding: 20px;
+  position: relative;
+  z-index: 4;
 }
 
 .key-accordion-item.active .key-accordion-content {
@@ -1184,6 +1214,8 @@ body.modal-open {
   font-weight: bold;
   line-height: 1.5625rem; /* Equivalent to 25px */
 }
+
+
 
 /* key feature */
 .container-ship {
@@ -1338,7 +1370,7 @@ body.modal-open {
 /* home 2 */
 
 .home-2-banner {
-  background-image: url("./assets/home-2-banner.png");
+  background-image: url("./assets/banner-3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1399,21 +1431,24 @@ body.modal-open {
   background-size: cover;
 }
 
-.overlay {
+
+.content-bg::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
-  z-index: 1; /* Keeps it behind the content */
-  backdrop-filter: brightness(90%); 
+  background: rgba(0, 0, 0, 0.5); /* Adjust for desired overlay color and opacity */
+  z-index: 1; /* Ensure this is behind the content */
+  pointer-events: none; /* Allows interactions to pass through the overlay */
 }
 
-.image-container{
+.overlay {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* This ensures the content is above the overlay */
 }
+
 
 .simulation-course {
   margin: 50px 120px;
@@ -2142,7 +2177,7 @@ body.modal-open {
     padding: 30px;
     gap: 30px;
   }
-
+ 
   .img-div {
     height: 299px;
     width: 100%;
@@ -2163,6 +2198,7 @@ body.modal-open {
 
   .text-div p {
     width: 100%;
+    font-size: 16px;
   }
 
   /* testimonial */
@@ -2266,12 +2302,12 @@ body.modal-open {
   }
 
   .course-card .img-div {
-    height: 100px;
+    height: 270px;
     width: 100%;
   }
 
   .course-card .img-div img{
-    height: 100px;
+    height: 270px;
   }
 
   .course-card .text-div {
@@ -2351,13 +2387,12 @@ body.modal-open {
   }
 
   .project-detail {
-    padding: 30px 30px;
-    margin: 85px 50px;
+    gap: 0px;
   }
 
-  .project-detail h4{
-    padding: 10px;
-  }
+  /* .project-detail h4{
+    padding: 20px;
+  } */
 
   /* home 2 */
 
@@ -2440,10 +2475,10 @@ body.modal-open {
   .course-text-div p {
     color: #3a321d;
     font-size: 16px;
-    word-wrap: break-word; /* Allows long words to break and wrap */
-    overflow-wrap: break-word; /* Ensures that text wraps within the container */
-    white-space: normal; /* Allows text to wrap onto the next line */
-    width: 100%; /* Ensures it adjusts to the container */
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    width: 100%;
     height: auto;
   }
 
@@ -2454,6 +2489,7 @@ body.modal-open {
 
 /* mobile screen - 360px */
 
+/* @media screen and (max-width: 380px) { */
 @media screen and (max-width: 380px) {
   /* home */
 
@@ -2467,6 +2503,10 @@ body.modal-open {
   .hero-text {
     top: 10%;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .hero-text h1 {
@@ -2511,6 +2551,7 @@ body.modal-open {
     font-size: 28px;
   }
 
+
   .offered-course-container {
     display: flex;
     flex-direction: column;
@@ -2538,7 +2579,7 @@ body.modal-open {
 
   .text-div p {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 
@@ -2653,8 +2694,12 @@ body.modal-open {
   }
 
   .course-card .img-div {
-    height: 313px;
+    height: 270px;
     width: 100%;
+  }
+
+  .course-card .img-div img{
+    height: 270px;
   }
 
   .course-card .text-div {
