@@ -22,7 +22,7 @@ body {
   background-size: cover;
   position: relative;
   /* height: 671px; */
-  height: 90vh;
+  height: 89vh;
 }
 
 .hero-svg {
@@ -55,7 +55,7 @@ body {
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
   line-height: 30px;
-  padding-bottom: 56px;
+  padding-bottom: 26px;
   width: 60%;
 }
 
@@ -95,7 +95,7 @@ body {
 .about {
   background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
   position: relative;
-  padding-top: 85px;
+  padding-top: 60px;
   z-index: 1;
   padding-bottom: 60px;
 }
@@ -110,7 +110,7 @@ body {
 .aboutcontent {
   border-radius: 10px;
   background-color: white;
-  padding: 36px 70px 36px 70px;
+  padding: 36px 80px 36px 80px;
   margin-top: -140px;
   z-index: 8;
   position: relative;
@@ -127,6 +127,7 @@ body {
   line-height: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 97%;
 }
 
 .aboutcontent h3 {
@@ -324,6 +325,10 @@ body {
   padding: 0 25px;
 }
 
+.testimonial{
+  margin-top: 80px;
+}
+
 .testimonial .heading {
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -339,7 +344,7 @@ body {
   position: relative;
   width: 100%;
   margin-top: 20px;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -541,7 +546,7 @@ body {
   overflow: hidden;
   width: 700px;
   border-radius: 10px;
-  height: 380px;
+  height: 504px;
 }
 
 .post img {
@@ -703,6 +708,10 @@ footer ul li:last-child {
   margin-top: 30px;
 }
 
+
+.footer-mobile{
+  display: none;
+}
 /* course page  */
 /* model */
 
@@ -842,6 +851,9 @@ body.modal-open {
   width: 200px;
   height: 40px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-button .background {
@@ -856,9 +868,10 @@ body.modal-open {
 
 .form-button .text {
   width: 200px;
-  height: 25.78px;
+  /* height: 25.78px; */
+
   position: absolute;
-  top: 7.11px;
+  /* top: 7.11px; */
   left: 0;
   text-align: center;
   color: white;
@@ -904,7 +917,7 @@ body.modal-open {
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 30px;
-  padding-bottom: 56px;
+  padding-bottom: 26px;
   width: 40%;
 }
 
@@ -933,6 +946,7 @@ body.modal-open {
 .course-card .img-div img {
   width: 100%;
   height: 413px;
+  border-radius: 10px 0 0 10px;
 }
 
 .course-card .text-div {
@@ -1005,6 +1019,10 @@ body.modal-open {
 .left-side > div {
   padding: 38px 38px 38px 120px;
   border-bottom: 3px solid white;
+}
+
+.icon i{
+  font-weight: 900 !important;
 }
 
 .right-side {
@@ -1108,6 +1126,7 @@ body.modal-open {
 
 .key-accordion {
   max-width: 100%;
+  border: 2px solid white;
   /* margin: 0 70px; */
 }
 
@@ -1168,7 +1187,7 @@ body.modal-open {
 
 /* key feature */
 .container-ship {
-  background-image: url("./assets/Key\ Features.jpeg");
+  background-image: url("./assets/keyfeature.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1190,7 +1209,7 @@ body.modal-open {
   position: relative;
   padding-top: 10px;
   z-index: 1;
-  padding-bottom: 160px;
+  padding-bottom: 200px;
 }
 
 .key-feature-text {
@@ -1232,12 +1251,12 @@ body.modal-open {
   background-size: cover;
   height: 68.625rem;
   margin-bottom: -80px;
-  padding: 50px 120px;
+  padding: 65px 120px;
 }
 
 .accordion-main {
   height: 59.08694rem;
-  padding: 50px 65px;
+  padding: 50px 60px;
   border-radius: 10px;
 }
 
@@ -1380,6 +1399,22 @@ body.modal-open {
   background-size: cover;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
+  z-index: 1; /* Keeps it behind the content */
+  backdrop-filter: brightness(90%); 
+}
+
+.image-container{
+  position: relative;
+  z-index: 2;
+}
+
 .simulation-course {
   margin: 50px 120px;
 }
@@ -1453,7 +1488,7 @@ body.modal-open {
 
 .contact-support {
   background-color: #021220;
-  padding: 50px 120px;
+  padding: 50px 160px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2061,13 +2096,14 @@ body.modal-open {
 
   .hero-text {
     top: 10%;
-    margin-left: 50px;
+    margin: 0 50px;
   }
 
   .hero-text h1 {
     color: white;
     font-size: 46px;
     line-height: 50px;
+    width: 100%;
   }
 
   .hero-text h3 {
@@ -2089,6 +2125,10 @@ body.modal-open {
     line-height: 35px;
   }
 
+  .aboutcontent p{
+    font-size: 16px;
+  }
+
   /* offered courses */
   .offered-course {
     margin: 50px;
@@ -2104,7 +2144,7 @@ body.modal-open {
   }
 
   .img-div {
-    height: 399px;
+    height: 299px;
     width: 100%;
     /* padding: 50px; */
   }
@@ -2149,8 +2189,26 @@ body.modal-open {
     overflow: hidden;
     width: 400px;
     border-radius: 10px;
-    height: 380px;
+    height: 280px;
   }
+
+  
+.post h3 {
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.post-category {
+  bottom: 25%;
+}
+
+.post-date {
+  bottom: 5%;
+}
+
 
   /* footer */
   footer {
@@ -2160,6 +2218,14 @@ body.modal-open {
   footer img {
     width: 100px;
     height: 100px;
+  }
+
+  .footer{
+    display: none;
+  }
+
+  .footer-mobile{
+    display: block;
   }
 
   /* course - hero */
@@ -2200,8 +2266,12 @@ body.modal-open {
   }
 
   .course-card .img-div {
-    height: 413px;
+    height: 313px;
     width: 100%;
+  }
+
+  .course-card .img-div img{
+    height: 313px;
   }
 
   .course-card .text-div {
@@ -2212,7 +2282,7 @@ body.modal-open {
   /* key benefits for tablet*/
 
   .keybenefit-section {
-    padding: 50px 50px;
+    padding: 60px 50px;
   }
 
   .key-accordion-title {
@@ -2285,6 +2355,10 @@ body.modal-open {
     margin: 85px 50px;
   }
 
+  .project-detail h4{
+    padding: 10px;
+  }
+
   /* home 2 */
 
   .home-2-banner {
@@ -2306,6 +2380,10 @@ body.modal-open {
     padding-top: 26px;
     padding-bottom: 26px;
     width: 60%;
+  }
+
+  .home2-about h3{
+      padding-bottom: 20px;
   }
 
   .content-bg {
@@ -2394,11 +2472,13 @@ body.modal-open {
   .hero-text h1 {
     font-size: 28px;
     line-height: 40px;
+    width: 100%;
   }
 
   .hero-text h3 {
     font-size: 16px;
     line-height: 26px;
+    width: 100%;
   }
 
   /* about */
@@ -2441,7 +2521,6 @@ body.modal-open {
   }
 
   .img-div {
-    height: 399px;
     width: 100%;
   }
 
@@ -2516,7 +2595,6 @@ body.modal-open {
     overflow: hidden;
     width: 400px;
     border-radius: 10px;
-    height: 380px;
   }
 
   /* footer */
@@ -2527,6 +2605,14 @@ body.modal-open {
   footer img {
     width: 80px;
     height: 80px;
+  }
+
+  .footer{
+    display: none;
+  }
+
+  .footer-mobile{
+    display: block;
   }
 
   /* course - hero */
@@ -2567,7 +2653,7 @@ body.modal-open {
   }
 
   .course-card .img-div {
-    height: 413px;
+    height: 313px;
     width: 100%;
   }
 
@@ -2589,12 +2675,12 @@ body.modal-open {
   /* key benefits for tablet*/
 
   .keybenefit-section {
-    padding: 20px 20px;
+    padding: 50px 20px;
   }
 
   .key-left-heading {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .key-accordion-title {
@@ -2732,7 +2818,7 @@ body.modal-open {
 
   .course-div {
     margin: 0 20px;
-    padding: 10px;
+    padding: 20px;
     height: auto;
     gap: 20px;
   }
