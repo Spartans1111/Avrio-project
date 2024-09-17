@@ -23,3 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+
+
+  // loader
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none"; // Hides the preloader when the content is fully loaded
+  });
+  

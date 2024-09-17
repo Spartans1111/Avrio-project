@@ -8,6 +8,35 @@ body {
   overflow-x: hidden;
 }
 
+  /* Preloader Styles */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #loader-logo {
+    width: 150px;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Logo spinning effect */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 /* hero section */
 
 .hero {
@@ -1256,13 +1285,13 @@ body.modal-open {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 68.625rem;
+  /* height: 68.625rem; */
   margin-bottom: -80px;
   padding: 65px 120px;
 }
 
 .accordion-main {
-  height: 59.08694rem;
+  /* height: 59.08694rem; */
   padding: 50px 60px;
   border-radius: 10px;
 }
@@ -1296,6 +1325,7 @@ body.modal-open {
   width: max-content;
   letter-spacing: 0;
   line-height: 45px;
+  transition: font-size 0.3s ease;
 }
 
 .accordion-title:hover,
@@ -1606,9 +1636,11 @@ body.modal-open {
 }
 
 
+/* course pages nav - box shadow */
 
-
-
+.course-page-nav{
+  box-shadow: 0px 24px 32px 0px rgba(44, 99, 229, 0.08);
+}
 
 
 /* resposnive - tablet*/
@@ -2544,7 +2576,7 @@ body.modal-open {
   /* home 2 */
 
   .home-2-banner {
-    height: 70vh;
+    height: 75vh;
     margin-top: 100px;
   }
 
@@ -2937,12 +2969,12 @@ body.modal-open {
   .accordion-title {
     margin: 0 5px;
     padding: 5px 0;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .accordion-title:hover,
   .accordion-item.active .accordion-title {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .accordion-content {
@@ -2978,6 +3010,7 @@ body.modal-open {
     top: 15%;
     left: 0;
     margin-left: 20px;
+    margin-right: 20px;
   }
 
   .home-hero-text h1 {
