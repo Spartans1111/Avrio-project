@@ -1186,7 +1186,7 @@ body.modal-open {
   color: white;
 }
 
-.key-accordion-content {
+/* .key-accordion-content {
   display: none;
   font-size: 1.2rem;
   padding: 20px;
@@ -1196,6 +1196,21 @@ body.modal-open {
 
 .key-accordion-item.active .key-accordion-content {
   display: block;
+} */
+
+
+.key-accordion-content {
+  max-height: 0; /* Initially collapsed */
+  overflow: hidden;
+  font-size: 1.2rem;
+  padding: 0 20px; /* Padding on left and right */
+  position: relative;
+  z-index: 4;
+  transition: max-height 0.5s ease; /* Adjust transition time here */
+}
+
+.key-accordion-item.active .key-accordion-content {
+  padding: 20px; /* Restore padding when expanded */
 }
 
 .active .fas.fa-chevron-down {
@@ -1219,6 +1234,20 @@ body.modal-open {
   font-size: 1.125rem; /* Equivalent to 18px */
   font-weight: bold;
   line-height: 1.5625rem; /* Equivalent to 25px */
+}
+
+.icon{
+  width: 36px; 
+  height:36px; 
+  color: white; 
+  border:2px solid white; 
+  border-radius: 50px;  
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-weight: 900; 
+  transition: transform 0.5s ease; 
+  font-family: 'Font Awesome 5 Free';
 }
 
 /* key feature */
@@ -1641,6 +1670,420 @@ body.modal-open {
 .course-page-nav{
   box-shadow: 0px 24px 32px 0px rgba(44, 99, 229, 0.08);
 }
+
+/* breadcrum nav bar */
+.section-margin{
+  margin: 0 120px;
+}
+
+.breadcrumb-nav{
+  margin-top: 150px;
+}
+
+
+.breadcrumb {
+  font: .75em sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex; /* Make the breadcrumb 100% width */
+}
+
+.breadcrumb.bc3x {
+  font-size: 1.25em;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  margin-bottom: .2em;
+  position: relative;
+}
+
+.breadcrumb li a {
+  color: #fff;
+  display: block;
+  padding: .5em 1em;
+  position: relative;
+  text-decoration: none;
+  transition: .25s;
+}
+
+/* Arrow shape and seamless transition */
+.breadcrumb li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1.25em;
+  width: 0;
+  height: 0;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-left: 1em solid inherit; /* Use the current element's background color */
+  z-index: 1;
+}
+
+.breadcrumb li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1em;
+  width: 0;
+  height: 0;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-left: 1em solid #006a97; /* Color of the next breadcrumb item */
+  z-index: 0;
+  transition: .25s;
+}
+
+/* Gradient background for the first breadcrumb item */
+.breadcrumb li:first-child a {
+  background: linear-gradient(90deg, #001AAF 0%, #871EB6 100%);
+}
+
+.breadcrumb li:first-child a:after {
+  border-left-color: #006a97; /* Color for the next item */
+}
+
+/* Background for other items */
+.breadcrumb li:not(:first-child) a {
+  background-color: #006a97;
+}
+
+/* Hover effect */
+.breadcrumb li a:hover {
+  background-color: #0098d9;
+}
+
+.breadcrumb li a:hover:after {
+  border-left-color: #0098d9;
+}
+
+/* Disable the pointer and make the last item inactive */
+.breadcrumb li:last-child a {
+  background-color: #0098d9;
+  pointer-events: none;
+}
+
+.breadcrumb li:last-child a:after {
+  border-left-color: #0098d9;
+}
+
+
+
+
+/* exercise list */
+.exercise {
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.exercise-no-div, .exercise-name-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.exercise-no-div {
+  width: 30%;
+  border-right: 2px #CCCCCC solid;
+}
+
+.exercise-no {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  margin: 20px 0;
+}
+
+.exercise-no p {
+  color: #3A321D;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.exercise-no h1 {
+  color: #3A321D;
+  font-size: 86px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.exercise-name-div {
+  width: 80%;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.exercise-name-div p {
+  color: #3A321D;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-bottom: auto;
+}
+
+.exercise-btns {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* Buttons styles (unchanged) */
+.course-material-container,
+.assessment-container {
+  width: 175px;
+  height: 40px;
+  position: relative;
+}
+
+.background-box,
+.assessment-background {
+  width: 175px;
+  height: 40px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.background-box {
+  background: linear-gradient(90deg, #001AAF 0%, #871EB6 100%);
+}
+
+.assessment-background {
+  background: #CCCCCC;
+}
+
+.text-box,
+.assessment-text {
+  width: 175px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+
+
+/* my learning page */
+.learning-section{
+  margin-top: 150px;
+}
+
+
+.learning-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.learning-heading h2{
+  font-size: 32px; 
+  font-family: Inter; 
+  font-weight: 700; 
+  line-height: 20px; 
+  word-wrap: break-word;
+}
+
+
+/* progress section */
+.progress-list{
+margin: 50px 0;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.progress-container-div{
+  background-color: white; 
+  box-shadow: 0px 24px 32px rgba(43.55, 99.24, 229.19, 0.08); 
+  border-radius: 10px;
+}
+
+.progress-card{
+  padding: 35px 30px 35px 30px;
+  border-radius: 10px;
+  display: flex; 
+  gap: 20px; 
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0 25px;
+}
+
+/* General styling for all browsers */
+progress {
+  width: 100px;
+  height: 11px;
+  appearance: none; /* Remove default styling */
+  background-color: white; /* Background color of the progress bar */
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+}
+
+progress::-webkit-progress-bar {
+  background-color: white; /* Background color of the progress bar */
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+}
+
+progress::-webkit-progress-value {
+  background-color:  #34C759;
+  border-radius: 20px;
+  border: 1px solid #34C759;
+}
+
+progress::-moz-progress-bar {
+  background-color:  #34C759;
+  border-radius: 20px;
+  border: 1px solid #34C759;
+}
+
+progress::-ms-fill {
+  background-color:  #34C759;
+  border-radius: 20px;
+  border: 1px solid #34C759;
+}
+
+
+.progress-icon{
+  width: 36px; 
+  height: 36px; 
+  color: #CCCCCC; 
+  border:2px solid #CCCCCC; 
+  border-radius: 50px;  
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-weight: 900; 
+  transition: transform 0.5s ease; 
+  font-family: 'Font Awesome 5 Free';
+}
+
+.seperator{
+  width: 1px; 
+  height: 28px; 
+  color: #cccccc;
+  background-color: #cccccc;
+}
+
+
+.ellipsis-text {
+  width: 239px;
+  color: #4F4F4F; 
+  font-size: 16px; 
+  font-family: Montserrat; 
+  font-weight: 700; 
+  line-height: 20px; 
+  word-wrap: break-word; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: calc(20px * 2);
+}
+
+.progress-text{
+  color: #4F4F4F; 
+  font-size: 16px; 
+  font-family: Montserrat; 
+  font-weight: 400; 
+  line-height: 20px; 
+  word-wrap: break-word;
+}
+
+.progress-bar{
+  display: flex; 
+  gap: 10px; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.progress-bar p{
+  text-align: center; 
+  color: #3A321D; 
+  font-size: 16px; 
+  font-family: Montserrat; 
+  font-weight: 700; 
+  line-height: 40px; 
+  word-wrap: break-word;
+}
+
+.day-progress-list{
+  background-color: rgb(237, 237, 237);
+  margin: 0px 60px 30px 60px;
+  border-top: 1px solid #cccccc; 
+  border-bottom: 1px solid #cccccc;
+  display: none;
+}
+
+.day-progress-card{
+  padding: 35px 20px 35px 20px;
+  display: flex; 
+  gap: 20px; 
+  justify-content: space-between; 
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+}
+
+.exercise-progress-card{
+  padding: 35px 20px 35px 10px;
+}
+
+.day-progress-list.visible {
+  display: block;
+}
+
+.day-progress-text{
+  color: #4F4F4F; 
+  font-size: 16px; 
+  font-family: Montserrat; 
+  font-weight: 400; 
+  line-height: 20px; 
+  word-wrap: break-word;
+}
+
+
+/* Rotate icon when list is expanded */
+.progress-icon i.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.exercise-progress{
+  background-color: white;
+  display: none;
+}
+
+.day-progress-card .progress-icon i.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.exercise-title{
+  padding-right: 30px;
+}
+
 
 
 /* resposnive - tablet*/
