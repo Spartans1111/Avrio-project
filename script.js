@@ -69,6 +69,49 @@ document.addEventListener("DOMContentLoaded", function () {
   // loader
   window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
-    preloader.style.display = "none"; // Hides the preloader when the content is fully loaded
+    preloader.style.display = "none";
   });
   
+
+
+
+//   tab section - mylearning page
+const tabItems = document.querySelectorAll('.tab-item');
+const tabContents = document.querySelectorAll('.content');
+const tabIndicator = document.querySelector('.tab-indicator');
+
+// Function to handle tab switching
+tabItems.forEach((tab, index) => {
+  tab.addEventListener('click', () => {
+    // Remove active class from all tabs and content sections
+    tabItems.forEach(item => item.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active-content'));
+
+    // Add active class to the clicked tab and content
+    tab.classList.add('active');
+    tabContents[index].classList.add('active-content');
+
+    // Move the tab indicator to the clicked tab
+    const tabRect = tab.getBoundingClientRect();
+    const containerRect = tab.parentElement.getBoundingClientRect();
+    const tabWidth = tabRect.width;
+    const tabLeft = tabRect.left - containerRect.left;
+
+    tabIndicator.style.width = `${tabWidth}px`;
+    tabIndicator.style.transform = `translateX(${tabLeft}px)`;
+  });
+});
+
+// Set the initial position of the tab indicator
+document.addEventListener('DOMContentLoaded', () => {
+  const activeTab = document.querySelector('.tab-item.active');
+  if (activeTab) {
+    const tabRect = activeTab.getBoundingClientRect();
+    const containerRect = activeTab.parentElement.getBoundingClientRect();
+    const tabWidth = tabRect.width;
+    const tabLeft = tabRect.left - containerRect.left;
+
+    tabIndicator.style.width = `${tabWidth}px`;
+    tabIndicator.style.transform = `translateX(${tabLeft}px)`;
+  }
+});
