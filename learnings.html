@@ -23,7 +23,7 @@
         <a href="./index.html"><img src="./assets/avrio-logo.svg" alt=""></a>
         <ul>
           <li><a href="./index.html">HOME</a></li>
-          <li><a href="./course.html">MY LEARNINGS</a></li>
+          <li><a href="./learnings.html">MY LEARNINGS</a></li>
           <li><a href="./index.html">CONTACT</a></li>
           <li><a href="#">LOGOUT</a></li>
         </ul>
@@ -38,11 +38,12 @@
     <section class="learning-section section-margin">
         <div class="learning-heading">
             <h2>My Learnings</h2>
-
-            <div class="assessment-container">
-                <div class="assessment-background"></div>
-                <div class="assessment-text">Generate Certificate</div>
-            </div>
+            <a href="">
+                <div class="assessment-container">
+                    <div class="assessment-background"></div>
+                    <div class="assessment-text">Generate Certificate</div>
+                </div>
+            </a>
         </div>
 
 
@@ -50,7 +51,7 @@
         <div class="progress-list">
             <div class="progress-container-div">
                 <div class="progress-card">
-                    <div class="radio-container" style="margin-left: -30px;">
+                    <div class="radio-container">
                         <input type="radio" id="radio1" name="single-radio" value="option1">
                         <label for="radio1" class="radio-label"></label>
                     </div>
@@ -58,14 +59,16 @@
                     <p class="ellipsis-text">LNG Simulation Course..LNG Simulation Course..</p>
                     <span class="seperator"></span>
 
-                    <p class="progress-text">In Progress</p>
-                    <span class="seperator"></span>
+                    <div class="progress-status">
+                        <p class="progress-text">In Progress</p>
+                        <span class="seperator"></span>
 
-                    <p class="progress-text">3 Exercises Completed</p>
-                    <span class="seperator"></span>
+                        <p class="progress-text">3 Exercises Completed</p>
+                        <span class="seperator"></span>
 
-                    <p class="progress-text">3 Exercises Not Completed</p>
-                    <span class="seperator"></span>
+                        <p class="progress-text">3 Exercises Not Completed</p>
+                        <span class="seperator"></span>
+                    </div>
 
                     <div class="progress-bar">
                         <progress id="file" value="50" max="100"> 32% </progress>
@@ -82,13 +85,17 @@
                         <div class="day-progress-card">
             
                             <p class="ellipsis-text">Day 1</p>
+
+                            <div class="day-progress-status">
             
-                            <p class="day-progress-text">3 Exercises Completed</p>
-                            <span class="seperator"></span>
-            
-                            <p class="day-progress-text">3 Exercises Not Completed</p>
-                            <span class="seperator"></span>
-            
+                                <p class="day-progress-text">3 Exercises Completed</p>
+                                <span class="seperator"></span>
+                
+                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                            </div>
+
+                                <span class="seperator"></span>
+
                             <div class="progress-bar">
                                 <progress id="file" value="50" max="100"> 32% </progress>
                                 <p>50%</p>
@@ -106,10 +113,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 1 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -128,10 +138,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 2 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -148,12 +161,15 @@
                             <div class="day-progress-card exercise-progress-card">
                 
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
-                                    Name 3</p>
+                                    Name 3 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -172,10 +188,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 4 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -196,13 +215,17 @@
                         <div class="day-progress-card">
             
                             <p class="ellipsis-text">Day 2</p>
+
+                            <div class="day-progress-status">
             
-                            <p class="day-progress-text">3 Exercises Completed</p>
-                            <span class="seperator"></span>
-            
-                            <p class="day-progress-text">3 Exercises Not Completed</p>
-                            <span class="seperator"></span>
-            
+                                <p class="day-progress-text">3 Exercises Completed</p>
+                                <span class="seperator"></span>
+                
+                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                            </div>
+
+                                <span class="seperator"></span>
+
                             <div class="progress-bar">
                                 <progress id="file" value="50" max="100"> 32% </progress>
                                 <p>50%</p>
@@ -220,10 +243,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 1 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -242,10 +268,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 2 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -262,12 +291,15 @@
                             <div class="day-progress-card exercise-progress-card">
                 
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
-                                    Name 3</p>
+                                    Name 3 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -286,10 +318,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 4 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -311,13 +346,17 @@
                         <div class="day-progress-card">
             
                             <p class="ellipsis-text">Day 3</p>
+
+                            <div class="day-progress-status">
             
-                            <p class="day-progress-text">3 Exercises Completed</p>
-                            <span class="seperator"></span>
-            
-                            <p class="day-progress-text">3 Exercises Not Completed</p>
-                            <span class="seperator"></span>
-            
+                                <p class="day-progress-text">3 Exercises Completed</p>
+                                <span class="seperator"></span>
+                
+                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                            </div>
+
+                                <span class="seperator"></span>
+
                             <div class="progress-bar">
                                 <progress id="file" value="50" max="100"> 32% </progress>
                                 <p>50%</p>
@@ -335,10 +374,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 1 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -357,10 +399,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 2 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -377,12 +422,15 @@
                             <div class="day-progress-card exercise-progress-card">
                 
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
-                                    Name 3</p>
+                                    Name 3 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -401,10 +449,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 4 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -426,13 +477,17 @@
                         <div class="day-progress-card">
             
                             <p class="ellipsis-text">Day 4</p>
+
+                            <div class="day-progress-status">
             
-                            <p class="day-progress-text">3 Exercises Completed</p>
-                            <span class="seperator"></span>
-            
-                            <p class="day-progress-text">3 Exercises Not Completed</p>
-                            <span class="seperator"></span>
-            
+                                <p class="day-progress-text">3 Exercises Completed</p>
+                                <span class="seperator"></span>
+                
+                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                            </div>
+
+                                <span class="seperator"></span>
+
                             <div class="progress-bar">
                                 <progress id="file" value="50" max="100"> 32% </progress>
                                 <p>50%</p>
@@ -450,10 +505,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 1 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -472,10 +530,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 2 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -492,12 +553,15 @@
                             <div class="day-progress-card exercise-progress-card">
                 
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
-                                    Name 3</p>
+                                    Name 3 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -516,10 +580,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 4 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -541,13 +608,17 @@
                         <div class="day-progress-card">
             
                             <p class="ellipsis-text">Day 5</p>
+
+                            <div class="day-progress-status">
             
-                            <p class="day-progress-text">3 Exercises Completed</p>
-                            <span class="seperator"></span>
-            
-                            <p class="day-progress-text">3 Exercises Not Completed</p>
-                            <span class="seperator"></span>
-            
+                                <p class="day-progress-text">3 Exercises Completed</p>
+                                <span class="seperator"></span>
+                
+                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                            </div>
+
+                                <span class="seperator"></span>
+
                             <div class="progress-bar">
                                 <progress id="file" value="50" max="100"> 32% </progress>
                                 <p>50%</p>
@@ -565,10 +636,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 1 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -587,10 +661,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 2 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -607,12 +684,15 @@
                             <div class="day-progress-card exercise-progress-card">
                 
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
-                                    Name 3</p>
+                                    Name 3 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -631,10 +711,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 4 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -656,13 +739,17 @@
                         <div class="day-progress-card">
             
                             <p class="ellipsis-text">Day 6</p>
+
+                            <div class="day-progress-status">
             
-                            <p class="day-progress-text">3 Exercises Completed</p>
-                            <span class="seperator"></span>
-            
-                            <p class="day-progress-text">3 Exercises Not Completed</p>
-                            <span class="seperator"></span>
-            
+                                <p class="day-progress-text">3 Exercises Completed</p>
+                                <span class="seperator"></span>
+                
+                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                            </div>
+
+                                <span class="seperator"></span>
+
                             <div class="progress-bar">
                                 <progress id="file" value="50" max="100"> 32% </progress>
                                 <p>50%</p>
@@ -680,10 +767,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 1 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -702,10 +792,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 2 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -722,12 +815,15 @@
                             <div class="day-progress-card exercise-progress-card">
                 
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
-                                    Name 3</p>
+                                    Name 3 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">
@@ -746,10 +842,13 @@
                                 <p class="ellipsis-text exercise-title">  Really long Exercise   
                                     Name 4 </p>
                 
-                                <p class="day-progress-text">3 Exercises Completed</p>
-                                <span class="seperator"></span>
-                
-                                <p class="day-progress-text">3 Exercises Not Completed</p>
+                                <div class="day-progress-status">
+                                    <p class="day-progress-text">3 Milestones Completed</p>
+                                    <span class="seperator"></span>
+                    
+                                    <p class="day-progress-text">3 Milestones Remaining</p>
+                                </div>
+
                                 <span class="seperator"></span>
                 
                                 <div class="progress-bar">

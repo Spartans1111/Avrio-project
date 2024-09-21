@@ -16,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
@@ -35,19 +36,44 @@
     </nav>
 
     <!-- breadcrumb numbar -->
-    <section class="section-margin breadcrumb-nav">
-        <ul class="breadcrumb bc3x">
-            <li><a href="#">First level</a></li>
-            <li><a href="#">Second level</a></li>
-            <li><a href="#">Third level</a></li>
-            <li><a href="#">Current level</a></li>
-            <li><a href="#">Current level</a></li>
-        </ul>
+    <section class="breadcrumb-nav">
+      <div class="breadcrumb flat"> 
+        <a href="#" class="active">
+          <span class="inner-text">Exercise 01</span>
+        </a>
+        <a href="#">
+          <span class="inner-text">02</span>
+        </a>
+        <a href="#">
+          <span class="inner-text">03</span>
+        </a>
+        <a href="#">
+          <span class="inner-text">04</span>
+        </a>
+        <a href="#">
+          <span class="inner-text">05</span>
+        </a>
+      </div>
     </section>
 
 
+    <!-- nav for mobile -->
+     <section class="section-margin dropdown-menu">
+      <div class="custom-select-container">
+        <select class="custom-select">
+            <option value="1"><a href="">Exercise 1</a></option>
+            <option value="2"><a href="">Exercise 2</a></option>
+            <option value="3"><a href="">Exercise 3</a></option>
+            <option value="4"><a href="">Exercise 4</a></option>
+            <option value="5"><a href="">Exercise 5</a></option>
+        </select>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+     </section>
+
+
         <!-- exercise -->
-        <section class="section-margin">
+        <section class="section-margin" >
           <div class="material-main">
               <div class="material-title ">
                   <h2>Exercise 01</h2>
@@ -73,7 +99,7 @@
                       <div class="tab-content active-content">
                         <div class="tab-accordion">
                           <button class="tab-accordion-header first-accordion" data-section="1" style="display: none;">
-                            Topic 1 
+                            <span class="tab-title-underline">Topic 1</span>
                             <div class="tab-icon">
                               <i class="fas fa-chevron-down"></i>
                             </div>
@@ -256,7 +282,7 @@
   
                         <div class="tab-accordion">
                           <button class="tab-accordion-header" data-section="8" disabled>
-                              <span class="tab-title-underline">7. Training and Preparedness      </span>                 
+                              <span class="tab-title-underline">7. Training and Preparedness</span>                 
                             <div class="tab-icon">
                               <i class="fas fa-chevron-down"></i>
                             </div>
@@ -294,20 +320,96 @@
                       <div class="tab-content">
                         <div class="tab-accordion">
                           <button class="tab-accordion-header" data-section="1">
-                            Topic 1 
+                            <span class="tab-title-underline">Milestones and procedure to achieve them</span>
                             <div class="tab-icon">
                               <i class="fas fa-chevron-down"></i>
                             </div>
                           </button>
                           <div class="tab-accordion-content">
-                            <p>Content for Topic 1. This content will scroll if it exceeds the maximum height.</p>
-                            <button class="next-button">Next</button>
+                            <p><b>1.Configure the correct settings for the ESD.</b></p>
+                            <ul>
+                              <li>Visit the ESD System page and carry out the following steps.</li>
+                              <li>Ship / Shore Link selector switch to USE.</li>
+                              <li>Pneumatic Selector switch to BYPASS.</li>
+                              <li>ESD Port selector switch to LOADING.</li>
+                              <li>Place the ESD Mode select to NORMAL.</li>
+                          </ul>
+                          <p>The above steps ensures the readiness of the ESD system. Ensure the correct lights and indications are ON before proceeding to the next step.</p>
+                          <img src="./assets/exercise.png" style="width: 100%; height: 100%;"/>
+                          
+                          <button class="next-button">Next</button>
                           </div>
                         </div>
                       
                         <div class="tab-accordion">
                           <button class="tab-accordion-header" data-section="2" disabled>
-                            Topic 2 
+                            <span class="tab-title-underline">Prepare both HD Compressors and required Generators for use.</span>
+                            <div class="tab-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </div>
+                          </button>
+                          <div class="tab-accordion-content">
+                            <p>Content for Topic 2. This content will scroll if it exceeds the maximum height.</p>
+                            <button class="next-button">Next</button>
+                          </div>
+                        </div>
+
+                        <div class="tab-accordion">
+                          <button class="tab-accordion-header" data-section="3" disabled>
+                            <span class="tab-title-underline">Run a CTS Report Set up and activate the CTS status for official tank gauging.</span>
+                            <div class="tab-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </div>
+                          </button>
+                          <div class="tab-accordion-content">
+                            <p>Content for Topic 2. This content will scroll if it exceeds the maximum height.</p>
+                            <button class="next-button">Next</button>
+                          </div>
+                        </div>
+
+
+                        <div class="tab-accordion">
+                          <button class="tab-accordion-header" data-section="4" disabled>
+                            <span class="tab-title-underline">Complete the Line up by following the required steps:</span>
+                            <div class="tab-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </div>
+                          </button>
+                          <div class="tab-accordion-content">
+                            <p>Content for Topic 2. This content will scroll if it exceeds the maximum height.</p>
+                            <button class="next-button">Next</button>
+                          </div>
+                        </div>
+
+                        <div class="tab-accordion">
+                          <button class="tab-accordion-header" data-section="5" disabled>
+                            <span class="tab-title-underline">Start Loading and complete Ramp-up.</span>
+                            <div class="tab-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </div>
+                          </button>
+                          <div class="tab-accordion-content">
+                            <p>Content for Topic 2. This content will scroll if it exceeds the maximum height.</p>
+                            <button class="next-button">Next</button>
+                          </div>
+                        </div>
+
+                        <div class="tab-accordion">
+                          <button class="tab-accordion-header" data-section="6" disabled>
+                            <span class="tab-title-underline">Start HD Compressors as per requirement of the Exercise.</span>
+                            <div class="tab-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </div>
+                          </button>
+                          <div class="tab-accordion-content">
+                            <p>Content for Topic 2. This content will scroll if it exceeds the maximum height.</p>
+                            <button class="next-button">Next</button>
+                          </div>
+                        </div>
+
+                        <div class="tab-accordion">
+                          <button class="tab-accordion-header" data-section="7" disabled>
+                            <span class="tab-title-underline">Achieve staggering between Cargo tanks.</span>
                             <div class="tab-icon">
                               <i class="fas fa-chevron-down"></i>
                             </div>
@@ -325,20 +427,38 @@
                       <div class="tab-content">
                           <div class="tab-accordion">
                             <button class="tab-accordion-header" data-section="1">
-                              Topic 1 
+                              <span class="tab-title-underline">Instructional Videos</span>
                               <div class="tab-icon">
                                   <i class="fas fa-chevron-down"></i>
                                 </div>
                             </button>
                             <div class="tab-accordion-content">
-                              <p>Content for Topic 1. This content will scroll if it exceeds the maximum height.</p>
+                              <p><b>1. Preparation for loading :</b></p>
+                              <video>
+                                <source src="./assets/demo-video.mp4"/>
+                              </video>
+
                               <button class="next-button">Next</button>
                             </div>
                           </div>
                         
                           <div class="tab-accordion">
                             <button class="tab-accordion-header" data-section="2" disabled>
-                              Topic 2 
+                              <span class="tab-title-underline">Learning Objectives Resources</span>
+                              <div class="tab-icon">
+                                  <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </button>
+                            <div class="tab-accordion-content">
+                              <p>Content for Topic 2. This content will scroll if it exceeds the maximum height.</p>
+                              <button class="next-button">Next</button>
+                            </div>
+                          </div>
+
+
+                          <div class="tab-accordion">
+                            <button class="tab-accordion-header" data-section="3" disabled>
+                              <span class="tab-title-underline">Milestone Resources</span>
                               <div class="tab-icon">
                                   <i class="fas fa-chevron-down"></i>
                                 </div>
@@ -351,7 +471,7 @@
                         
                         </div>
                     </div>
-                </div>
+              </div>
                 
           
           </div>
@@ -568,6 +688,50 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTab(currentTab); 
 });
 
+
+
+
+
+// breadcrumb nav
+document.querySelector('.breadcrumb').addEventListener('click', function(event) {
+  let target = event.target;
+
+  // If the clicked element is the span, get its parent (the <a> tag)
+  if (target.tagName === 'SPAN' && target.classList.contains('inner-text')) {
+    target = target.parentElement;
+  }
+
+  // Only proceed if an <a> tag was clicked
+  if (target.tagName === 'A' && event.currentTarget.contains(target)) {
+    const links = event.currentTarget.querySelectorAll('a');
+    
+    // Remove 'active' class from all links
+    links.forEach(link => link.classList.remove('active'));
+
+    // Add 'active' class to the clicked link
+    target.classList.add('active');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+        // navbar
+        let button = document.querySelector(".humbargar");
+        let menu = document.querySelector(".nav ul");
+        button.addEventListener("click", () => {
+            menu.classList.toggle("display");
+            button.children[0].classList.toggle("toggle1");
+            button.children[1].classList.toggle("toggle2");
+            button.children[2].classList.toggle("toggle3");
+        });
     </script>
 </body>
 </html>

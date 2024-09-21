@@ -115,3 +115,19 @@ document.addEventListener('DOMContentLoaded', () => {
     tabIndicator.style.transform = `translateX(${tabLeft}px)`;
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
